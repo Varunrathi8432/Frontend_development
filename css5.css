@@ -1,0 +1,38 @@
+#box{
+    width: 400px;
+    border: 3px solid aqua;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: grey;
+    text-align: center;
+    font-size: 50px;
+    padding: 2px;
+    margin: 10px;
+}
+
+#nav{
+    height: 50px;
+    border: 2px solid aqua;
+    background-color: pink;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-content:center;
+    padding-left: 5px;
+    margin: 20px;
+}
+p{
+    height: 50px;
+    width: 80px;
+    font-size: 24px;
+}

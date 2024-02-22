@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background-image: url("studio.png");
+    height: 100vh;
+    background-size: cover;
+}
+
+#check {
+    display: none;
+}
+
+#but_one i {
+    color: white;
+    opacity: .8;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    line-height: 63px;
+    left: 16px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+#nav_bar {
+    position: fixed;
+    background-color: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px grey;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-size: cover;
+    transition: all 0.3s linear;
+}
+
+#logo {
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 2px 6px grey;
+    line-height: 40px;
+    height: 60px;
+}
+
+#logo a {
+    position: absolute;
+    color: white;
+    opacity: .5;
+    font-size: 30px;
+    top: 10px;
+    text-decoration: none;
+    left: 50px;
+}
+
+#but_two i {
+    position: absolute;
+    line-height: 60px;
+    color: grey;
+    font-size: 25px;
+    left: 275px;
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+#menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+#menu li {
+    margin-top: 6px;
+    padding: 14px 20px;
+    font-size: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    opacity: .7;
+    margin-left: 15px;
+}
+
+#foot {
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+}
+
+#foot i {
+    font-size: 30px;
+    margin-right: 10px;
+    transition: all 0.3s linear;
+}
+
+#menu li:hover {
+    box-shadow: 0 0 6px grey;
+}
+
+#foot i:hover {
+    transform: scale(1.2);
+}
+
+#but_one i:hover {
+    font-size: 40px;
+}
+
+#but_two i:hover {
+    font-size: 30px;
+}
+
+#check:checked~#nav_bar {
+    left: 0;
+}
+
+#check:checked~#but_one i {
+    opacity: 0;
+}
+
+#check:checked~#nav_bar #but_two i {
+    opacity: 1;
+}

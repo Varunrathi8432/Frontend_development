@@ -1,0 +1,21 @@
+#pets{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.card{
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 8px;
+}
+img{
+    border-radius: 1em;
+    width: 100%;
+}
+@media (max-width : 850px) {
+    #pets{
+        flex-wrap: wrap;
+    }
+}
+

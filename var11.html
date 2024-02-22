@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allignment</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .container {
+            width: 1000px;;
+            background: rgb(232, 194, 194);
+            border: 3px solid red;
+            margin: 30px auto;
+
+        }
+
+        .item {
+            background: rgb(196, 164, 196);
+            border: 2px solid purple;
+            padding: 12px 3px;
+            margin: 12px 3px;
+
+        }
+
+        #Fruit {
+            float: left;
+            width:49%;
+        }
+        
+        #vegtable {
+            float: right;
+            width:49%;
+        }
+        
+        #general {
+            /* float: left; */
+            clear: both;
+            width:99%;
+        }
+        p,h5{
+            text-align: justify;
+        }
+        h2{
+            margin: auto;
+            width:500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Welcome to Market</h2>
+        <div class="item" id="Fruit">
+            <h5>Fruit</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tenetur odit repudiandae doloribus ab
+                sapiente necessitatibus repellendus molestiae, voluptates sequi a cum enim quia provident aliquam
+                distinctio. Totam numquam libero, similique quibusdam error ipsam!
+            </p>
+        </div>
+        <div class="item" id="vegtable">
+            <h5>vegtable</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tenetur odit repudiandae doloribus ab
+                sapiente necessitatibus repellendus molestiae, voluptates sequi a cum enim quia provident aliquam
+                distinctio. Totam numquam libero, similique quibusdam error ipsam!
+            </p>
+        </div>
+        <div class="item" id="general">
+            <h5>general</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita tenetur odit repudiandae doloribus ab
+                sapiente necessitatibus repellendus molestiae, voluptates sequi a cum enim quia provident aliquam
+                distinctio. Totam numquam libero, similique quibusdam error ipsam!
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
